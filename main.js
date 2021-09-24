@@ -16,7 +16,7 @@ fetch(url).then((resp) => resp.json()).then(function(data) {
   return eventos.map(function(event) {
     let li = createNode('li');
     let span = createNode('span');
-    span.innerHTML = `${event.events}`;
+    span.innerHTML = `Eventos: ${event.events} -> Ardilla: ${event.squirrel}`;
     append(li, span);
     append(ul, li);
   })
